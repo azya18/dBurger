@@ -8,8 +8,11 @@
 
 @media (max-width: 1200px) {
   .wrapper__list {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .wrapper__list-card {
@@ -21,7 +24,10 @@
 
 @media(max-width:576px) {
   .wrapper__list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .wrapper__list-card {
@@ -42,6 +48,8 @@
 
 @media print {
   .print {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
